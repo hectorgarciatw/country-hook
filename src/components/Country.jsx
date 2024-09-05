@@ -1,15 +1,12 @@
 const Country = ({ country }) => {
-    // No data no show
     if (!country) {
         return null;
     }
 
-    // No country
     if (!country.found) {
         return <div>not found...</div>;
     }
 
-    // The data of the country
     const countryData = country.data;
 
     return (
